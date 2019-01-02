@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<interface>
+  <requires lib='gtk+' version='3.4'/>
+  <object class='GtkToolbar' id='toolbar'>
+    <property name='visible'>True</property>
+    <property name='can_focus'>False</property>
+    <child>
+      <object class='GtkToolButton' id='toolbutton_new'>
+        <property name='visible'>True</property>
+        <property name='can_focus'>False</property>
+        <property name='tooltip_text' translatable='yes'>New Standard</property>
+        <property name='action_name'>app.on_newstandard</property>
+        <property name='icon_name'>document-new</property>
+      </object>
+      <packing>
+        <property name='expand'>False</property>
+        <property name='homogeneous'>True</property>
+      </packing>
+    </child>
+    <child>
+      <object class='GtkToolButton' id='toolbutton_open'>
+        <property name='visible'>True</property>
+        <property name='can_focus'>False</property>
+        <property name='tooltip_text' translatable='yes'>Open Standard</property>
+        <property name='action_name'>app.on_openstandard</property>
+        <property name='icon_name'>document-open</property>
+      </object>
+      <packing>
+        <property name='expand'>False</property>
+        <property name='homogeneous'>True</property>
+      </packing>
+    </child>
+    <child>
+      <object class='GtkToolButton' id='toolbutton_save'>
+        <property name='visible'>True</property>
+        <property name='can_focus'>False</property>
+        <property name='tooltip_text' translatable='yes'>Save Standard</property>
+        <property name='action_name'>app.on_savestandard</property>
+        <property name='icon_name'>document-save</property>
+      </object>
+      <packing>
+        <property name='expand'>False</property>
+        <property name='homogeneous'>True</property>
+      </packing>
+    </child>
+    <child>
+      <object class='GtkSeparatorToolItem' id='toolbutton_separator'>
+        <property name='visible'>True</property>
+        <property name='can_focus'>False</property>
+      </object>
+    </child>
+    <child>
+      <object class='GtkToolButton' id='toolbutton_cut'>
+        <property name='visible'>True</property>
+        <property name='can_focus'>False</property>
+        <property name='tooltip_text' translatable='yes'>Cut Standard</property>
+        <property name='action_name'>win.on_cutstandard</property>
+        <property name='icon_name'>edit-cut</property>
+      </object>
+      <packing>
+        <property name='expand'>False</property>
+        <property name='homogeneous'>True</property>
+      </packing>
+    </child>
+    <child>
+      <object class='GtkToolButton' id='toolbutton_copy'>
+        <property name='visible'>True</property>
+        <property name='can_focus'>False</property>
+        <property name='tooltip_text' translatable='yes'>Copy Standard</property>
+        <property name='action_name'>win.on_copystandard</property>
+        <property name='icon_name'>edit-copy</property>
+      </object>
+      <packing>
+        <property name='expand'>False</property>
+        <property name='homogeneous'>True</property>
+      </packing>
+    </child>
+    <child>
+      <object class='GtkToolButton' id='toolbutton_paste'>
+        <property name='visible'>True</property>
+        <property name='can_focus'>False</property>
+        <property name='tooltip_text' translatable='yes'>Paste Standard</property>
+        <property name='action_name'>win.on_pastestandard</property>
+        <property name='icon_name'>edit-paste</property>
+      </object>
+      <packing>
+        <property name='expand'>False</property>
+        <property name='homogeneous'>True</property>
+      </packing>
+    </child>
+  </object>
+</interface>
